@@ -1,0 +1,7 @@
+<h1>Wallet <br/> Watcher</h1>
+<% if user_signed_in? %>
+  <%= link_to "Categories", groups_path %><br />
+<% else %>
+  <%= link_to "Log in", groups_path %><br />
+  <%= link_to "Sign up", new_user_registration_path %><br />
+<% end %>

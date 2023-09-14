@@ -1,0 +1,10 @@
+<h1>groups show</h1>
+
+<div>
+  <% @group.founds_drainers.each do |drainer| %>
+    <p><%= drainer.name %></p>
+    <p>Amount: <%= drainer.amount %></p>
+  <% end %>
+</div>
+
+<%= link_to "Add new transaction", new_group_founds_drainer_path(@group) %><br />

@@ -1,0 +1,11 @@
+<h1>groups index<h1/>
+<div>
+  <% @groups.each do |group| %>
+    <%= link_to group_path(group) do %>
+      <%= group.name %>
+      <img src="<%= group.icon %>" alt="icon">
+      <%= group.user %>
+    <% end %>
+  <% end %>
+</div>
+<%= link_to "Add new group", new_group_path %><br />

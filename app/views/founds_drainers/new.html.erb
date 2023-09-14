@@ -1,0 +1,28 @@
+<%= form_with model: @founds_drainer, url: group_founds_drainers_path(@group) do |f| %>
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :amount %><br />
+      <%= f.number_field :amount %>
+    </div>
+
+    <div class="field">
+      <%= f.label :categories, "Select Categories" %><br />
+      <% Group.all.each do |category| %>
+        <label>
+          <%= check_box_tag 'founds_drainer[group_ids][]', category.id, false, id: "group_#{category.id}" %>
+          <%= category.name %>
+        </label>
+        <br />
+      <% end %>
+    </div>
+  
+    <div class="actions">
+      <%= f.submit "Create Founds drainer" %>
+    </div>
+  <% end %>
+  
+  <%= link_to 'Back', groups_path %>
