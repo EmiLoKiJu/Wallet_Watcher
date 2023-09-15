@@ -1,28 +1,32 @@
+<%= render 'layouts/nav' %>
+
 <%= form_with model: @founds_drainer, url: group_founds_drainers_path(@group) do |f| %>
+  <div class="bg-white">
     <div class="field">
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
-    </div>
-  
-    <div class="field">
-      <%= f.label :amount %><br />
-      <%= f.number_field :amount %>
+      <%= f.text_field :name, class: 'placeholder border-top-1', placeholder: "Name" %>
     </div>
 
+    <div class="horizontal-line"></div>
+  
     <div class="field">
-      <%= f.label :categories, "Select Categories" %><br />
+      <%= f.number_field :amount, class: 'placeholder', placeholder: "Amount" %>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <div class="categories-cont dflex flexcol">
+      <%= f.label :categories, "Select Categories", class: 'label2' %><br />
       <% Group.all.each do |category| %>
-        <label>
+        <div class="dflex spacebetween">
           <%= check_box_tag 'founds_drainer[group_ids][]', category.id, false, id: "group_#{category.id}" %>
-          <%= category.name %>
-        </label>
+          <div class="label1"><%= category.name %></div>
+        </div>
         <br />
       <% end %>
     </div>
   
-    <div class="actions">
-      <%= f.submit "Create Founds drainer" %>
+    <div class="login-button-2">
+      <%= f.submit "SAVE" %>
     </div>
-  <% end %>
-  
-  <%= link_to 'Back', groups_path %>
+  </div>
+<% end %>

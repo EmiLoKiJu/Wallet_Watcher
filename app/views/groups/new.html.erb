@@ -1,15 +1,19 @@
+<%= render 'layouts/nav' %>
+
 <%= form_with model: @group do |f| %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
+  <div class="bg-white">
+    <div class="field">
+      <%= f.text_field :name, class: 'placeholder border-top-1', placeholder: "Name" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :icon %><br />
-    <%= f.text_field :icon %>
-  </div>
+    <div class="horizontal-line"></div>
 
-  <div class="actions">
-    <%= f.submit "Create Group" %>
+    <div class="field">
+      <%= f.text_field :icon, class: 'placeholder border-bottom-1', placeholder: "Image Url" %>
+    </div>
+
+    <div class="login-button-2">
+      <%= f.submit "SAVE" %>
+    </div>
   </div>
 <% end %>

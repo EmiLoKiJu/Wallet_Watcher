@@ -1,10 +1,16 @@
 class GroupsController < ApplicationController
   def index
     @groups = Group.all
+    @group_totals = {}
+
+    @groups.each do |group|
+      @group_totals[group.id] = group.founds_drainers.sum(:amount)
+    end
   end
 
   def show
     @group = Group.includes(:founds_drainers).find(params[:id])
+    @group_totals = @group.founds_drainers.sum(:amount)
   end
 
   def new

@@ -1,10 +1,33 @@
-<h1>groups show</h1>
+<%= render 'layouts/nav' %>
 
-<div>
-  <% @group.founds_drainers.each do |drainer| %>
-    <p><%= drainer.name %></p>
-    <p>Amount: <%= drainer.amount %></p>
-  <% end %>
+<div class="transactions-cont dflex flexcol">
+  <div class="group-cont">
+    <div class="dflex bg-white space-between">
+      <div class="dflex small-img">
+        <img src="<%= @group.icon %>" alt="icon">
+      </div>
+      <div class="group-name">
+        <%= @group.name %>
+      </div>
+      <div class="group-total">
+        $<%= @group_totals %>
+      </div>
+    </div>
+    <div class="horizontal-line2"></div>
+    <% @group.founds_drainers.each do |drainer| %>
+      <div class="drainer-cont dflex space-between">
+        <p class="amount-name"><%= drainer.name %></p>
+        <p class="amount"> $<%= drainer.amount %></p>
+      </div>
+      <div class="horizontal-line2"></div>
+    <% end %>
+  </div>
 </div>
 
-<%= link_to "Add new transaction", new_group_founds_drainer_path(@group) %><br />
+<%= link_to new_group_founds_drainer_path(@group) do %>
+  <div class="bg-green add-group-cont dflex a-center j-center">
+    <div class="link-to-new-group dflex a-center j-center">
+      ADD NEW TRANSACTION
+    </div>
+  </div>
+<% end %>
