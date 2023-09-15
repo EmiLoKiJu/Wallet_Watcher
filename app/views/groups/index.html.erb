@@ -1,10 +1,16 @@
-<h1>groups index<h1/>
+<%= render 'layouts/nav' %>
+
 <div>
   <% @groups.each do |group| %>
     <%= link_to group_path(group) do %>
-      <%= group.name %>
-      <img src="<%= group.icon %>" alt="icon">
-      <%= group.user %>
+      <div class="dflex">
+        <div class="dflex small-img">
+          <img src="<%= group.icon %>" alt="icon">
+        </div>
+        <div>
+          <%= group.name %>
+        </div>
+      </div>
     <% end %>
   <% end %>
 </div>

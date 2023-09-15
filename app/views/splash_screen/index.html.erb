@@ -1,7 +1,19 @@
-<h1>Wallet <br/> Watcher</h1>
-<% if user_signed_in? %>
-  <%= link_to "Categories", groups_path %><br />
-<% else %>
-  <%= link_to "Log in", groups_path %><br />
-  <%= link_to "Sign up", new_user_registration_path %><br />
-<% end %>
+<div class="dflex flexcol a-center j-center cont1">
+  <h1 class="courier-new big-logo dflex flexcol j-center">
+    Wallet <br/> 
+    Watcher
+  </h1>
+  <div class="buttons dflex flexcol j-center a-center">
+    <% if user_signed_in? %>
+      <%= link_to "Categories", groups_path %><br />
+      <%= link_to "Logout", custom_destroy_user_session_path %>
+    <% else %>
+      <div class='button-cont'>
+        <%= button_to 'LOG IN', groups_path, class: 'login-button' %>
+      </div>
+      <%= link_to new_user_registration_path, class: 'button-cont' do %>
+        <button class="signup-button">SIGN UP</button>
+      <% end %>
+    <% end %>
+  </div>
+</div>
