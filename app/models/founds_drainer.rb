@@ -11,6 +11,6 @@ class FoundsDrainer < ApplicationRecord
   private
 
   def at_least_one_group
-    return unless group_ids.empty?
+    unless group_ids.empty?
   end
 end
