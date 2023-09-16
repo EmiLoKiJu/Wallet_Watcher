@@ -35,7 +35,9 @@ RSpec.describe User, type: :model do
 
   describe 'Devise modules' do
     it 'includes Devise modules' do
-      expect(described_class.devise_modules).to eq([:database_authenticatable, :rememberable, :recoverable, :registerable, :validatable])
+      expect(described_class.devise_modules).to eq(
+        %i[database_authenticatable rememberable recoverable registerable validatable]
+      )
     end
   end
 end
