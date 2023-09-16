@@ -1,15 +1,16 @@
-class FoundsDrainersController < ApplicationController
-  load_and_authorize_resource
+class FoundsDrainersController < ApplicationController;
   def new
     @group = Group.find(params[:group_id])
     @founds_drainer = FoundsDrainer.new
+    authorize! :create, @founds_drainer
   end
 
   # POST /groups
   def create
     @group = Group.find(params[:group_id])
-    @founds_drainer = @group.founds_drainers.build(fd_params)
+    @founds_drainer = FoundsDrainer.new(fd_params)
     @founds_drainer.author = current_user
+    authorize! :new, @founds_drainer
 
     if @founds_drainer.save
       redirect_to group_path(@group), notice: 'Found drainer was successfully created.'

@@ -10,7 +10,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @group = Group.includes(:founds_drainers).find(params[:id])
+    @group = current_user.groups.includes(:founds_drainers).find(params[:id])
     @group_totals = @group.founds_drainers.sum(:amount)
   end
 
