@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.feature 'splash screen view', type: :system do
   fixtures :users
   context 'when user is not signed in' do
@@ -48,3 +49,4 @@ RSpec.feature 'splash screen view', type: :system do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
