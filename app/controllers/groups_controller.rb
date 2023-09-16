@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+  load_and_authorize_resource
   def index
     @groups = current_user.groups
     @group_totals = {}
@@ -9,7 +10,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @group = Group.includes(:founds_drainers).find(params[:id])
+    @group = current_user.groups.includes(:founds_drainers).find(params[:id])
     @group_totals = @group.founds_drainers.sum(:amount)
   end
 

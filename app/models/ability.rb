@@ -8,5 +8,8 @@ class Ability
     can :manage, FoundsDrainer do |fd|
       fd.user == user
     end
+
+    can :create, Group
+    can :create, FoundsDrainer
   end
 end
