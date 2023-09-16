@@ -1,0 +1,28 @@
+<div class="dflex navbar a-center">
+<% if (['sessions', 'passwords', 'registrations'].include?(controller_name) && action_name == 'new') || (controller_name == 'groups' && action_name == 'index') %>
+    <%= link_to root_path do %>
+      <%= image_tag('arrow-left', alt: 'back', class: 'l-arrow') %>
+    <% end %>
+  <% else %>
+    <%= link_to groups_path do %>
+      <%= image_tag('arrow-left', alt: 'back', class: 'l-arrow') %>
+    <% end %>
+  <% end %>
+  <div class="title">
+    <% if controller_name == 'groups' && action_name == 'index' %>
+      CATEGORIES
+    <% elsif controller_name == 'groups' && action_name == 'new' %>
+      NEW CATEGORY
+    <% elsif controller_name == 'groups' && action_name == 'show' %>
+      TRANSACTIONS
+    <% elsif controller_name == 'founds_drainer' && action_name == 'new' %>
+      NEW TRANSACTION
+    <% elsif controller_name == 'sessions' && action_name == 'new' %>
+      LOG IN
+    <% elsif controller_name == 'registrations' && action_name == 'new' %>
+      REGISTER
+    <% elsif controller_name == 'passwords' && action_name == 'new' %>
+      FORGOT YOUR PASSWORD?
+    <% end %>
+  </div>
+</div>

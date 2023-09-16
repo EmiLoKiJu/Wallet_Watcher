@@ -1,0 +1,32 @@
+<%= render 'layouts/nav' %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="bg-white">
+    <div class="field">
+      <%= f.text_field :name, autofocus: true, class: 'placeholder border-top-1', placeholder: "Full name" %>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'placeholder', placeholder: "Email" %>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "new-password", class: 'placeholder', placeholder: "Password" %>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'placeholder border-bottom-1', placeholder: "Password confirmation" %>
+    </div>
+
+    <div class="login-button-2">
+      <%= f.submit "Sign up" %>
+    </div>
+  </div>
+<% end %>
