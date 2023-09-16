@@ -1,11 +1,11 @@
 <div class="dflex navbar a-center">
 <% if (['sessions', 'passwords', 'registrations'].include?(controller_name) && action_name == 'new') || (controller_name == 'groups' && action_name == 'index') %>
     <%= link_to root_path do %>
-      <%= image_tag('arrow-left', alt: 'back', class: 'l-arrow') %>
+      <%= image_tag('arrow-left.svg', alt: 'back', class: 'l-arrow') %>
     <% end %>
   <% else %>
     <%= link_to groups_path do %>
-      <%= image_tag('arrow-left', alt: 'back', class: 'l-arrow') %>
+      <%= image_tag('arrow-left.svg', alt: 'back', class: 'l-arrow') %>
     <% end %>
   <% end %>
   <div class="title">

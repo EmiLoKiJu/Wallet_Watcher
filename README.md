@@ -5,6 +5,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+  - [Video presentation](#video-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -21,7 +22,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Wallet-Watcher] <a name="about-project"></a>
-Wallet Watcher, is a way to watch your wallet as you go spending money around. Every time you want the app to know you spent some money in something, add the transaction in the respective category, and then you can see how much money you spent in that category in total.
+Wallet Watcher, is a way to watch your wallet as you go spending money around. Every time you want the app to know you spent some money in something, add the transaction in the respective category, and then you can see how much money you spent in each category in total.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,9 +63,15 @@ Wallet Watcher, is a way to watch your wallet as you go spending money around. E
 
 - **ROR**
 - **Devise**
+- **cancancan**
+- **Rspec**
+- **Capybara**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Video Presentation <a name="video-presentation"></a>
+
+You can see our video presentation [Here]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/Wallet-Watcher -->
@@ -74,8 +81,8 @@ To get a local copy of this project and run it in your computer, follow these st
 ### Prerequisites
 
 In order to run this project you need:
-- A working computer.
-- Connection to internet.
+- Ruby 3.0.1 or above
+- Ruby on rails 7.0.8 or above
 
 ### Setup
 
@@ -124,8 +131,6 @@ then run the command "rspec" in the terminal to run all the spec files in the re
 - LinkedIn: [grozas](https://www.linkedin.com/in/grozas/)
 
 <p align="right">(<a href="#Wallet-Watcher">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 <!-- FUTURE FEATURES -->
 
@@ -181,7 +186,9 @@ If you like this project give it a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-** WE would like to thank to Microverse for giving this inspiring project**
+Credits to Gregoire Vella, author of the (original design)[https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=&]
+
+** I would like to thank to Microverse for giving this inspiring project **
 
 <p align="right">(<a href="#Wallet-Watcher">back to top</a>)</p>
 
