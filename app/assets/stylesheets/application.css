@@ -1,3 +1,4 @@
+/* stylelint-disable csstree/validator */
 @font-face {
   font-family: 'Proxima Nova Thin';
   src: font-url('proxima-nova/Proxima-Nova-Thin.otf') format('opentype');
@@ -11,6 +12,7 @@
   font-weight: bold;
   font-style: normal;
 }
+/* stylelint-enable csstree/validator */
 
 body {
   margin: 0;
@@ -87,12 +89,10 @@ em {
 }
 
 .small-img {
-  /* border: 1px solid rgb(202, 202, 202); */
   width: 96px;
   height: 96px;
   justify-content: center;
   align-items: center;
-  /* object-fit: contain; */
   margin: 8px 2%;
 }
 
@@ -109,7 +109,6 @@ em {
 
 .big-logo {
   height: 80%;
-
 }
 
 .cont1 {
@@ -185,7 +184,6 @@ em {
   color: rgb(152, 157, 163);
   background-color: white;
   font-size: 18px;
-  /* padding: 16px 3%; */
   margin: 8px 1%;
 }
 

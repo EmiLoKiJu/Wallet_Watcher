@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "groups/index", type: :system do
+RSpec.feature 'groups/index', type: :system do
   fixtures :users
 
   before do

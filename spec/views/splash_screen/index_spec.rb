@@ -22,7 +22,7 @@ RSpec.feature 'splash screen view', type: :system do
       expect(page).to have_current_path(new_user_registration_path)
     end
   end
-  
+
   context 'when user is signed in' do
     before do
       user = users(:one)
