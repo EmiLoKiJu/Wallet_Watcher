@@ -1,0 +1,29 @@
+group_one:
+  name: "Group One"
+  icon: "icon1"
+  user: one
+
+group_two:
+  name: "Group Two"
+  icon: "icon2"
+  user: one
+
+group_three:
+  name: "Group Three"
+  icon: "icon3"
+  user: two
+
+group_four:
+  name: "Group Four"
+  icon: "icon4"
+  user: two
+
+group_five:
+  name: "Group Five"
+  icon: "icon5"
+  user: three
+
+group_six:
+  name: "Group Six"
+  icon: "icon6"
+  user: three
