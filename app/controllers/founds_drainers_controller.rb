@@ -1,4 +1,5 @@
 class FoundsDrainersController < ApplicationController
+  load_and_authorize_resource
   def new
     @group = Group.find(params[:group_id])
     @founds_drainer = FoundsDrainer.new
