@@ -11,8 +11,8 @@ class FoundsDrainer < ApplicationRecord
   private
 
   def at_least_one_group
-    unless group_ids.empty?
-      puts 'error while creating transaction'
-    end
+    return if group_ids.empty?
+
+    puts 'error while creating transaction'
   end
 end
