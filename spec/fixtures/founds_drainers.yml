@@ -1,0 +1,59 @@
+fd_one:
+  name: "FD One"
+  amount: 100.0
+  author: one
+
+fd_two:
+  name: "FD Two"
+  amount: 200.0
+  author: one
+
+fd_three:
+  name: "FD Three"
+  amount: 300.0
+  author: two
+
+fd_four:
+  name: "FD Four"
+  amount: 400.0
+  author: two
+
+fd_five:
+  name: "FD Five"
+  amount: 500.0
+  author: three
+
+fd_six:
+  name: "FD Six"
+  amount: 600.0
+  author: three
+
+fd_seven:
+  name: "FD Seven"
+  amount: 700.0
+  author: one
+
+fd_eight:
+  name: "FD Eight"
+  amount: 800.0
+  author: one
+
+fd_nine:
+  name: "FD Nine"
+  amount: 900.0
+  author: two
+
+fd_ten:
+  name: "FD Ten"
+  amount: 1000.0
+  author: two
+
+fd_eleven:
+  name: "FD Eleven"
+  amount: 1100.0
+  author: three
+
+fd_twelve:
+  name: "FD Twelve"
+  amount: 1200.0
+  author: three

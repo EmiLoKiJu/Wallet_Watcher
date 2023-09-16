@@ -1,0 +1,59 @@
+fdg_one_1:
+  founds_drainer_id: fd_one
+  group_id: group_one
+
+fdg_one_2:
+  founds_drainer_id: fd_one
+  group_id: group_two
+    
+fdg_two:
+  founds_drainer_id: fd_two
+  group_id: group_two
+    
+fdg_three_1:
+  founds_drainer_id: fd_three
+  group_id: group_three
+
+fdg_three_2:
+  founds_drainer_id: fd_three
+  group_id: group_four
+    
+fdg_four:
+  founds_drainer_id: fd_four
+  group_id: group_four
+    
+fdg_five_1:
+  founds_drainer_id: fd_five
+  group_id: group_five
+
+fdg_five_2:
+  founds_drainer_id: fd_five
+  group_id: group_six
+    
+fdg_six:
+  founds_drainer_id: fd_six
+  group_id: group_six
+    
+fdg_seven:
+  founds_drainer_id: fd_seven
+  group_id: group_one
+    
+fdg_eight:
+  founds_drainer_id: fd_eight
+  group_id: group_two
+    
+fdg_nine:
+  founds_drainer_id: fd_nine
+  group_id: group_three
+    
+fdg_ten:
+  founds_drainer_id: fd_ten
+  group_id: group_four
+    
+fdg_eleven:
+  founds_drainer_id: fd_eleven
+  group_id: group_five
+    
+fdg_twelve:
+  founds_drainer_id: fd_twelve
+  group_id: group_six

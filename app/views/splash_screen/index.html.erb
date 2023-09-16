@@ -1,0 +1,23 @@
+<div class="dflex flexcol a-center j-center cont1">
+  <h1 class="courier-new big-logo dflex flexcol j-center">
+    Wallet <br/> 
+    Watcher
+  </h1>
+  <div class="buttons dflex flexcol j-center a-center">
+    <% if user_signed_in? %>
+      <%= link_to groups_path, class: 'button-cont' do %>
+        <button class="login-button">CATEGORIES</button>
+      <% end %>
+      <%= link_to custom_destroy_user_session_path, class: 'button-cont' do %>
+        <button class="signup-button">LOG OUT</button>
+      <% end %>
+    <% else %>
+      <%= link_to new_user_session_path, class: 'button-cont' do %>
+        <button class="login-button">LOG IN</button>
+      <% end %>
+      <%= link_to new_user_registration_path, class: 'button-cont' do %>
+        <button class="signup-button">SIGN UP</button>
+      <% end %>
+    <% end %>
+  </div>
+</div>

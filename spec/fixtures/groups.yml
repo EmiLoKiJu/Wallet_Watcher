@@ -1,0 +1,29 @@
+group_one:
+  name: "Group One"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/2048px-Flat_tick_icon.svg.png"
+  user: one
+
+group_two:
+  name: "Group Two"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png"
+  user: one
+
+group_three:
+  name: "Group Three"
+  icon: "https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-vkm0drb1.png"
+  user: two
+
+group_four:
+  name: "Group Four"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/2048px-Flat_tick_icon.svg.png"
+  user: two
+
+group_five:
+  name: "Group Five"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png"
+  user: three
+
+group_six:
+  name: "Group Six"
+  icon: "https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-vkm0drb1.png"
+  user: three

@@ -1,0 +1,22 @@
+<%= render 'layouts/nav' %>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="bg-white">
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'placeholder border-top-1', placeholder: "Email" %>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", class: 'placeholder border-bottom-1', placeholder: "Password"  %>
+    </div>
+
+    <div class="login-button-2">
+      <%= f.submit "Log in" %>
+    </div>
+  </div>
+  <div class="forgot-cont dflex flexcol a-center">
+    <%= link_to "Forgot password ?", new_password_path(resource_name), class: "forgot-password-link" %>
+  </div>
+<% end %>
