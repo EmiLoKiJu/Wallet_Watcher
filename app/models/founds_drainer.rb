@@ -11,8 +11,6 @@ class FoundsDrainer < ApplicationRecord
   private
 
   def at_least_one_group
-    if group_ids.empty?
-      errors.add(:base, "You must select at least one category")
-    end
+    return unless group_ids.empty?
   end
 end
