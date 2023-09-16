@@ -12,9 +12,9 @@
         <button class="signup-button">LOG OUT</button>
       <% end %>
     <% else %>
-      <div class='button-cont'>
-        <%= button_to 'LOG IN', groups_path, class: 'login-button' %>
-      </div>
+      <%= link_to new_user_session_path, class: 'button-cont' do %>
+        <button class="login-button">LOG IN</button>
+      <% end %>
       <%= link_to new_user_registration_path, class: 'button-cont' do %>
         <button class="signup-button">SIGN UP</button>
       <% end %>

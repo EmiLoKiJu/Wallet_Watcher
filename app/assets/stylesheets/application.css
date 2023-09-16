@@ -49,6 +49,11 @@ em {
   justify-content: space-between;
 }
 
+.alert-notice {
+  position: fixed;
+  top: 34px;
+}
+
 .nova-bold {
   font-family: 'Proxima Nova Bold', sans-serif;
   font-weight: bold;

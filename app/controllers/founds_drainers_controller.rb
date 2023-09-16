@@ -1,7 +1,4 @@
 class FoundsDrainersController < ApplicationController
-  def index
-  end
-
   def new
     @group = Group.find(params[:group_id])
     @founds_drainer = FoundsDrainer.new

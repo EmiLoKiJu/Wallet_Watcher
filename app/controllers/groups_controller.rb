@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   def index
-    @groups = Group.all
+    @groups = current_user.groups
     @group_totals = {}
 
     @groups.each do |group|

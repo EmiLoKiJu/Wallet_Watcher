@@ -16,7 +16,7 @@
 
     <div class="categories-cont dflex flexcol">
       <%= f.label :categories, "Select Categories", class: 'label2' %><br />
-      <% Group.all.each do |category| %>
+      <% current_user.groups.each do |category| %>
         <div class="dflex spacebetween">
           <%= check_box_tag 'founds_drainer[group_ids][]', category.id, false, id: "group_#{category.id}" %>
           <div class="label1"><%= category.name %></div>

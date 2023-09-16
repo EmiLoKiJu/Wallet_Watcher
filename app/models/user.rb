@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :founds_drainers, foreign_key: :author_id
+  has_many :groups
 
   validates :email, presence: true, uniqueness: true
   validates :encrypted_password, presence: true
